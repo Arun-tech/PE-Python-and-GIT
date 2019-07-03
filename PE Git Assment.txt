@@ -1,35 +1,28 @@
 1)
 
-Desktop/myproject
-$touch index.html
-$touch app.js
+Sign into GIT HUB
+create a repository
+Add files into it using "Add" button
 
 2)
-
+Create a new folder
+$git init
 $git clone url=" "
 Make the necessary changes
-$git add
-$git commit
-$git push
+$git add <filename>
+$git commit -m "message"
+$git push origin master
 
 3)
-$git status
+$git whatchanged -n 1
 
 4)
 
 $git rm -rf --cached$FILES
 
 5)
-$git reflog
-ID  ------
-ID  ------
-
-Enter the ID of the file from which you want to remove
-$git reset --hard ID
-
-All the unrequired files will be removed
-To see the remaining existing files
-$ls
+Get commit hash from $git log
+$git revert <commit hash>
 
 6)
 
@@ -48,3 +41,6 @@ $git push [name.of.new.remote][URL]
 
 To merge changes
 $git merge [name.of.new.remote]/develop
+
+7)
+$git commit -m "message"<filepath>
