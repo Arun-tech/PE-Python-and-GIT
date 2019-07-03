@@ -1,0 +1,50 @@
+1)
+
+Desktop/myproject
+$touch index.html
+$touch app.js
+
+2)
+
+$git clone url=" "
+Make the necessary changes
+$git add
+$git commit
+$git push
+
+3)
+$git status
+
+4)
+
+$git rm -rf --cached$FILES
+
+5)
+$git reflog
+ID  ------
+ID  ------
+
+Enter the ID of the file from which you want to remove
+$git reset --hard ID
+
+All the unrequired files will be removed
+To see the remaining existing files
+$ls
+
+6)
+
+Pull changes from the upstream. Master needs to be updated
+$git pull
+
+Create branch on local machine
+$git checkout -b[name.of.new.branch]
+$git push origin[name.of.new.branch]
+
+Add remote to new branch
+$git remote add[name.of.remote][name.of.new.branch]
+
+Push changes from the commit into the new branch
+$git push [name.of.new.remote][URL]
+
+To merge changes
+$git merge [name.of.new.remote]/develop
